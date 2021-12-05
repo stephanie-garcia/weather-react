@@ -1,38 +1,59 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #5b6275;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
 .App {
+  margin: 20px;
+}
+
+.moreInfo {
+  margin-left: 100px;
+}
+
+.description {
+  font-style: italic;
+}
+
+.weather-forecast {
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-forecast-date {
+  font-size: 16px;
+  color: #7e7f83;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-forecast-low {
+  opacity: 0.5;
 }
